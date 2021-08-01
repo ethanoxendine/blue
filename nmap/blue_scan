@@ -1,0 +1,121 @@
+# Nmap 7.91 scan initiated Sat Jul 31 12:12:53 2021 as: nmap -vv -p- -T4 -A -oN blue_scan 10.10.34.14
+Increasing send delay for 10.10.34.14 from 0 to 5 due to 749 out of 1872 dropped probes since last increase.
+Warning: 10.10.34.14 giving up on port because retransmission cap hit (6).
+adjust_timeouts2: packet supposedly had rtt of -796889 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -796889 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -897370 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -897370 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -998434 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -998434 microseconds.  Ignoring time.
+Nmap scan report for 10.10.34.14
+Host is up, received echo-reply ttl 127 (0.16s latency).
+Scanned at 2021-07-31 12:12:55 EDT for 1220s
+Not shown: 65425 closed ports, 101 filtered ports
+Reason: 65425 resets and 101 no-responses
+PORT      STATE SERVICE            REASON          VERSION
+135/tcp   open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn        syn-ack ttl 127 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       syn-ack ttl 127 Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  ssl/ms-wbt-server? syn-ack ttl 127
+| ssl-cert: Subject: commonName=Jon-PC
+| Issuer: commonName=Jon-PC
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2021-07-30T15:24:48
+| Not valid after:  2022-01-29T15:24:48
+| MD5:   f32b 584e 7610 3c1c 56c0 51c1 0b5d 8e30
+| SHA-1: 5a93 279d e368 a833 1e3a 0aa4 3b04 b2f7 9dbf 327b
+| -----BEGIN CERTIFICATE-----
+| MIIC0DCCAbigAwIBAgIQLryOLJO9pZtMYA54RFWAijANBgkqhkiG9w0BAQUFADAR
+| MQ8wDQYDVQQDEwZKb24tUEMwHhcNMjEwNzMwMTUyNDQ4WhcNMjIwMTI5MTUyNDQ4
+| WjARMQ8wDQYDVQQDEwZKb24tUEMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+| AoIBAQDODi9pjxsWKeJbcieZEVbBfn2MQaeki7sqRdVCk60NyVvbwzelRyjcteHi
+| oAlCOVgF+CAOpsR8EVw9SrJ6rK15eMc/XsIATDCImKpH+HBovzIEli3lFbF5taKC
+| gOWZCsUZzHlTvwWFavqHypEmIQrlVdZwQtHh2kwOmNJ/cakSvk3iLsRTePnA0kLU
+| 2KVf5zVR1aGmOwI13kz/K7PM///bePO+6qpJSPcEoWZ+o3oHvXnWaL4L3dj0vWUL
+| 0F3C1Ly+itp/PnnWO0G2eGwaeVTrI/LE6lwcNjPVKI0Kh9BxKJG2kwYZvUZKOLCr
+| GJWZhhdMfSv0/I4uYKGpS4foLSCnAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF
+| BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQUFAAOCAQEAd98EIO8Wv3NPkhzW
+| pvxeGRgg3v1NKtujX8l+HTHHtlX2LAa2hEV75tp/jCN3a1btGJLMwE9+25Q46vbK
+| fpN+HonsCaTRsRSFhaxVw/BkFe1oXDLYCsVq+OCXuA7ViXyWafL/ezGIcvY0PN09
+| xZRHcoyIWzizE/Q5EjhEBqGj0uF2zal+QClvPyYCOvT1NgfprmfdbFW9CabE80sb
+| Z0oyOGQR8e/9LiPt8mxjOfN77qwzUYuybpE7V7PjTre4V3P24iK8r8MpOuS3NhJ3
+| 4s8JwVNgMqyJBTIAiLh0BqV6EuqInt8nqPupF/ICnIABjclV0Ynarh9e+i3ngBGD
+| /5cNwQ==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-07-31T16:33:13+00:00; -1s from scanner time.
+49152/tcp open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+49153/tcp open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+49154/tcp open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+49158/tcp open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+49160/tcp open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=7/31%OT=135%CT=1%CU=40853%PV=Y%DS=2%DC=T%G=Y%TM=61057B
+OS:4B%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=108%TI=I%CI=I%II=I%SS=S%TS
+OS:=7)OPS(O1=M505NW8ST11%O2=M505NW8ST11%O3=M505NW8NNT11%O4=M505NW8ST11%O5=M
+OS:505NW8ST11%O6=M505ST11)WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=20
+OS:00)ECN(R=Y%DF=Y%T=80%W=2000%O=M505NW8NNS%CC=N%Q=)ECN(R=N)T1(R=Y%DF=Y%T=8
+OS:0%S=O%A=S+%F=AS%RD=0%Q=)T1(R=N)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0
+OS:%Q=)T2(R=N)T3(R=Y%DF=Y%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T3(R=N)T4(R=Y%DF
+OS:=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T4(R=N)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%
+OS:F=AR%O=%RD=0%Q=)T5(R=N)T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T6(R=
+OS:N)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=80%
+OS:IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)U1(R=N)IE(R=Y%DFI=N%T=80%
+OS:CD=Z)IE(R=N)
+
+Uptime guess: 0.048 days (since Sat Jul 31 11:23:43 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: Host: JON-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h14m58s, deviation: 2h30m00s, median: -2s
+| nbstat: NetBIOS name: JON-PC, NetBIOS user: <unknown>, NetBIOS MAC: 02:3f:86:dc:fb:27 (unknown)
+| Names:
+|   JON-PC<00>           Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   JON-PC<20>           Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+| Statistics:
+|   02 3f 86 dc fb 27 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 11031/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 46393/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 59184/udp): CLEAN (Timeout)
+|   Check 4 (port 22291/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1:professional
+|   Computer name: Jon-PC
+|   NetBIOS computer name: JON-PC\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-07-31T11:33:02-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-07-31T16:33:02
+|_  start_date: 2021-07-31T15:24:47
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   167.69 ms 10.8.0.1
+2   169.13 ms 10.10.34.14
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul 31 12:33:15 2021 -- 1 IP address (1 host up) scanned in 1222.29 seconds
