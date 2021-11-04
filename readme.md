@@ -4,7 +4,7 @@
 * This is a writeup of the vulnerable machine 'Blue' on the website TryHackMe. This machine is vulnerable with the EternalBlue exploit. The EternalBlue exploit is a malicious attack that allows a threat agent to remotely execute arbitrary code to gain access to a network by sending speially crafted packets.
 
 #### EternalBlue 
-* This exploits a software vulnerablity in the Windows OS SMBv1 protocol.
+* This exploits a software vulnerability in the Windows OS SMBv1 protocol.
 * The SMB protocol is a network file sharing protocol that allows access to files on a remote server.
 * EternalBlue has the ability to compromise networks, which means that if one devices is infected then every device connected to the network is at risk.
 * To Learn more information about EternalBlue: https://www.cisecurity.org/wp-content/uploads/2019/01/Security-Primer-EternalBlue.pdf
