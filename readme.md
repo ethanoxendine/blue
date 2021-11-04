@@ -357,7 +357,7 @@ C:\Windows\System32\config>
 
 **Flag 3**
 
-this next flag will be need to be in an elevated evironment so lets move back to our meterpreter shell.
+this next flag will be need to be in an elevated environment so lets move back to our meterpreter shell.
 
 now type the command `cd C:/` 
 
